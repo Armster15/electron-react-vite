@@ -14,7 +14,8 @@
     "build:renderer": "cd ./packages/renderer && vite build",
     "release": "cross-env MODE=production npm run build && electron-builder build --config .electron-builder.config.js --dir --config.asar=false",
     "start": "node scripts/watch.js",
-    "clean": "del-cli \"./**/dist\" \"!./node_modules\""
+    "clean": "del-cli \"./**/dist\" \"!./node_modules\"",
+    "postinstall": "install-app-deps"
   },
   "devDependencies": {
     "@types/node": "^17.0.8",
