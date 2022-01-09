@@ -4,6 +4,8 @@
     "target": "esnext",
     "sourceMap": false,
     "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
     "skipLibCheck": true,
     "strict": true,
     "isolatedModules": true,
@@ -29,8 +31,4 @@
     "../../types/**/*.d.ts",
     "../preload/exposedInMainWorld.d.ts"
   ],
-  "exclude": [
-    "**/*.spec.ts",
-    "**/*.test.ts",
-  ]
 }
