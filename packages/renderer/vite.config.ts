@@ -32,7 +32,4 @@ export default defineConfig({
     emptyOutDir: true,
     brotliSize: false,
   },
-  test: {
-    environment: "happy-dom",
-  },
 });
