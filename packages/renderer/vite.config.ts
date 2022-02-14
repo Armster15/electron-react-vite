@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { chrome } from "../../.electron-vendors.cache.json";
 import { join } from "path";
-import { builtinModules } from "module";
 
 const PACKAGE_ROOT = __dirname;
 
@@ -26,9 +25,6 @@ export default defineConfig({
     target: `chrome${chrome}`,
     outDir: "dist",
     assetsDir: ".",
-    rollupOptions: {
-      external: [...builtinModules],
-    },
     emptyOutDir: true,
     brotliSize: false,
   },
